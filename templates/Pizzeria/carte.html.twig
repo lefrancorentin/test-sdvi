@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{{ nom }}{% endblock %}
+
+{% block titrePage %}
+    {{ nom }}
+{% endblock %}
+
+{% block body %}
+    <table>
+        <tr>
+            <th>Pizza</th>
+            <th>Prix</th>
+        </tr>
+        {% for pizza, prix in prix_pizzas %}
+            <tr>
+                <td>{{ pizza }}</td>
+                <td>{{ prix }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+

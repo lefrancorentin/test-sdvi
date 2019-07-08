@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pizza {{ nom }}{% endblock %}
+
+{% block titrePage %}
+    <span>La pizza</span>{{ nom }}
+{% endblock %}
+
+{% block body %}
+    <div class="tp-detail-page">
+        <div class="tp-detail-blk">
+            <div class="tp-detail-title">
+                Prix de fabrication <span class="tp-detail-prix">{{ cout }}</span>
+            </div>
+        </div>
+        <div class="tp-detail-blk">
+            <div class="tp-detail-title">Ingrédients <span class="tp-detail-ingredients">{{ ingredients }}</span></div>
+        </div>
+    </div>
+
+{% endblock %}
